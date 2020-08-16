@@ -33,13 +33,13 @@
     },
 
     "MicroserviceA": {
-      "Type" : "Task",
+      "Type": "Task",
       "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_microserviceA",
       "End": true
     },
 
     "MicroserviceB": {
-      "Type" : "Task",
+      "Type": "Task",
       "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_microserviceB",
       "End": true
     },

@@ -1,6 +1,6 @@
-# Query a Third-Party API #
+# Query a Third-Party API
 
-## Pattern ##
+## Pattern
 
 - Retry
 
@@ -11,7 +11,7 @@ third-party API. When a third-party API is being integrated into a
 microservice application, it introduces vectors for failure, including, but
 not limited to: network failures; rate limits; and service outages.
 
-## How It Works ##
+## How It Works
 
 ASL (Amazon States Language) provides a built-in "Retry" construct that allows
 you as a developer to specify how many times to retry a specific step, as well

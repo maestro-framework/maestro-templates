@@ -28,7 +28,7 @@
       "Catch": [
         {
           "ErrorEquals": ["States.ALL"],
-          "ResultPath":"$.errorInfo",
+          "ResultPath": "$.errorInfo",
           "Next": "Bar"
         }
       ]

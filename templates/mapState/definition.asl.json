@@ -20,7 +20,8 @@
       }
     },
     "Final State": {
-      "Type": "Pass",
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_finalState",
       "End": true
     }
   }

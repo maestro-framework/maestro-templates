@@ -1,9 +1,10 @@
 {
-  "Comment": "A Hello World example of the Amazon States Language using Pass states",
+  "Comment": "A Hello World example of the Amazon States Language",
   "StartAt": "Hello",
   "States": {
     "Hello": {
-      "Type": "Pass",
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_hello",
       "Result": "Hello",
       "Next": "World"
     },

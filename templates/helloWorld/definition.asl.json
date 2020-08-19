@@ -5,7 +5,6 @@
     "Hello": {
       "Type": "Task",
       "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_hello",
-      "Result": "Hello",
       "Next": "World"
     },
     "World": {

@@ -5,19 +5,7 @@
     "Requester": {
       "Type": "Task",
       "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_requester",
-      "Next": "Validator"
-    },
-    "Validator": {
-      "Type": "Task",
-      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:WORKFLOW_NAME_validator",
-      "Next": "Manager",
-      "Catch": [
-        {
-          "ErrorEquals": ["States.ALL"],
-          "ResultPath": "$.errorInfo",
-          "Next": "Notifier"
-        }
-      ]
+      "Next": "Manager"
     },
     "Manager": {
       "Type": "Task",

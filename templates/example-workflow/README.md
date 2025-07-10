@@ -10,7 +10,7 @@ like this:
 
 1. A request comes in to the manager
    - The request can be malformed
-2. The manager makes a decision, branching to 2 differnt states
+2. The manager makes a decision, branching to 2 different states
 3. If the manager accepts, the resource is first provisioned
    - This provisioning is a complex task that can fail
 4. After the resource is provisioned, control is passed to an access granter,
